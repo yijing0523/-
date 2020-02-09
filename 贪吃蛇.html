@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .map {
+            width: 800px;
+            height: 600px;
+            position: relative;
+            top: 0px;
+            left: 0px;
+            background-color: #ccc;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="map" id="map">
+
+    </div>
+</body>
+<!-- <script src="./js/food.js"></script>
+<script src="./js/senker.js"></script>
+<script src="./js/Game.js"></script> -->
+<script src="./js/index.js"></script>
+<script>
+    //   生成全局变量存放地图
+    let map = document.querySelector('#map');
+
+    // 引入游戏控制器对象
+    let g1 = new game(map) ;
+    g1.staer() ;
+
+    // // 食物------------------------------------------
+    // // 生成实例对象
+    // let f1 = new Food();
+    // console.log(f1);
+    // // 调用原型方法
+    // f1.rander(map);
+
+    // // 蛇------------------------------------------
+    // // 生成实例对象
+    // // 实例化对象
+    // let s1 = new Senker();
+    // console.log(s1);
+    // // 调用原型方法
+    // s1.rander(map);
+</script>
+</html>
